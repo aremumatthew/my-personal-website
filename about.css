@@ -1,0 +1,164 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: 'barlow', sans-serif;
+  padding-top: 80px;
+}
+main, .main{
+  width: 100%;
+  display: flex;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main img{
+  width: 50%;
+  margin-top: 50px;
+  display: block;
+
+}
+.profile-image{
+  border-radius: 20px;
+  border-top-right-radius: 100px;
+ /*border-style: dashed;*/
+  margin-bottom: 50px;
+}
+.small-profile-image{
+  width: 70px;
+}
+main div{
+  width: 80%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+main h1{
+  color : black;
+  font-weight: 900px;
+  font-size: 70px;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+main p{
+  color: rgb(97, 97, 97);
+  line-height: 25px;
+  margin-bottom: 30px;
+  margin-top: 130px;
+  word-spacing: 3px;
+  padding-inline: 20px;
+}
+main strong{
+  text-decoration: underline;
+  font-style: italic;
+}
+.projects h1{
+  color: rgb(88, 87, 87);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.projects a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  padding-bottom: 15px;
+}
+.projects svg{
+  fill: red;
+  padding-right: 10px;
+  width: 40px;
+}
+.projects img{
+  width: 100%;
+}
+.home{
+  color: black;
+  text-decoration: none;
+}
+.home:hover{
+  margin-left: 5px;
+  transition: 0.5, ease-in;
+}
+.socials{
+ display: flex;
+ justify-content: center;
+}
+.fa{
+  color: rgb(3, 25, 44);
+  text-align: center;
+  font-size: 50px;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+}
+footer{
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  display: none;
+}
+@media(max-width: 950px){
+  body{
+    padding-inline: 30px;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main img{
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+  
+  }
+  main div{
+    width: 100%;
+    margin-inline: 0;
+  }
+  main h1{
+    color : black;
+    font-size: 40px;
+    font-weight: 900px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  main p{
+    color: rgb(97, 97, 97);
+    line-height: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    word-spacing: 3px;
+    padding-inline: 0px;
+  }
+.hideOnMobile{
+  display: none;
+}
+.right-logo-div{
+  display:flex;
+  margin-top: -10px;
+  margin-left: auto;
+}
+.right-logo:active{
+  width:110px
+}
+.openIcon{
+  display: flex;
+}
+.socials{
+ display: flex;
+ justify-content: left;
+}
+footer{
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+}
