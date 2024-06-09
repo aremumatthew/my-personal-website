@@ -1,0 +1,242 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: 'barlow', sans-serif;
+  padding-top: 80px;
+}
+.header{
+  display:flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 70px;
+  z-index: 998;
+  background-color: white;
+}
+.header a{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  padding-top: 25px;
+  text-decoration: none;
+}
+.links{
+  display:flex;
+  margin-left: auto;
+  gap: 40px;
+}
+.sideNav{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 223, 221);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:0;
+  height: 100%;
+  overflow-x : hidden;
+  z-index: 1000;
+  transition : all 1s ease;
+}
+.sideNav a{
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  width: 130px;
+}
+.sideNav a:hover{
+  padding-left: 37px;
+  color: orangered;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+.sideNav img{
+  width: 120px;
+  height: 40px;
+  margin-top: auto;
+}
+.closebtn{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 60px;
+  padding-right: 10px;
+  margin-left: auto;
+}
+.openicon{
+  color: black;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  display: none;
+}
+.rightLogo{
+  display : none;
+  margin-top: 25px;
+  width: 100px;
+}
+.leftLogo{
+  display : block;
+  margin-bottom: 5px;
+  width: 100px;
+}
+main{
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+.profile-image{
+  margin-bottom: 50px;
+  width: 50%;
+  margin-top: 50px;
+  display: block;
+  margin-right: auto;
+}
+.projects{
+  width: 100%;
+  margin-top: 15%;
+
+}
+.project ul{
+  width: 100%;
+}
+.projects img{
+  margin-left: 30px;
+}
+li{
+  list-style-type: none;
+}
+#close-svg{
+  margin-left: auto;
+  float: right;
+  margin-right: 25px;
+  display: none
+}
+#svg{
+  margin-left: auto;
+  margin-right: 25px;
+  float: right;
+  fill: grey;
+}
+hr{
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+h2{
+  color: rgb(70, 67, 67);
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: -25px;
+}
+.project-details{
+  width: 100%;
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.15s;
+}
+.project-details p{
+  font-size: 16px;
+  line-height: 20px;
+  margin: 70px 50px;
+  color: rgb(73, 71, 71);
+}
+.project-details a{
+  color: rgb(139, 8, 8);
+  font-size: 15px;
+  font-weight: 700;
+}@media(max-width: 1300px){
+  .project-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-image{
+    margin-bottom: 50px;
+    width: 60%;
+    margin-top: 50px;
+    display: block;
+  }
+  .project-details p{
+    font-size: 16px;
+    line-height: 20px;
+    margin: 50px 20px;
+    color: rgb(73, 71, 71);
+  }
+}
+@media(max-width: 850px){
+  body{
+    padding-inline: 30px;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .profile-image{
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 120px;
+    margin-top: 50px;
+    display: block;
+    margin-right: auto;
+  }
+  .projects{
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 700px){
+  
+.close-svg{
+  margin-left: auto;
+  float: right;
+  margin-right: 5px;
+  display: none
+}
+.svg{
+  margin-left: auto;
+  margin-right: 5px;
+  float: right;
+  fill: grey;
+}
+.hideOnMobile{
+  display: none;
+}
+.right-logo-div{
+  display:flex;
+  margin-top: -10px;
+  margin-left: auto;
+}
+.right-logo:active{
+  width:110px
+}
+.openIcon{
+  display: flex;
+}
+.openicon{
+  display: block;
+}
+.rightLogo{
+  display : block;
+  width: 100px;
+  height: 30px;
+}
+.leftLogo{
+  display : none;
+  margin-top: 25px;
+  width: 100px;
+}
+}
