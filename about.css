@@ -63,6 +63,9 @@ main strong{
   justify-content: center;
   margin-bottom: 30px;
 }
+.projects{
+  padding-left: 40px;
+}
 .projects a{
   color: black;
   text-decoration: none;
@@ -98,10 +101,12 @@ main strong{
   margin-bottom: 30px;
 }
 footer{
+  margin-top: 30px;
   color: black;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+  padding-top: 5px;
   display: none;
 }
 @media(max-width: 950px){
@@ -137,6 +142,9 @@ footer{
     margin-top: 30px;
     word-spacing: 3px;
     padding-inline: 0px;
+  }
+  .projects{
+    padding-left: 10px;
   }
 .hideOnMobile{
   display: none;
